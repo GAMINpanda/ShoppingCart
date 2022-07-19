@@ -10,7 +10,9 @@ namespace ShoppingCart
 
         static void Main(string[] args)
         {
-            Product cornflakes = new Product("Cornflakes", 5.06, 7);
+            //Product cornflakes = new Product("Cornflakes", 5.06, 7);
+            //Product cornflakes = new Product("cornflakes", 5.06, 7);
+            Product cornflakes = new Product("cornflakes", 7);
             Debug.WriteLine(cornflakes.OutTotal());
 
             Basket ShoppingCart = new Basket();
@@ -21,7 +23,9 @@ namespace ShoppingCart
 
             ShoppingCart.OutItems();
 
-            Product cheerios = new Product("Cheerios", 3.01, 3);
+            //Product cheerios = new Product("Cheerios", 3.01, 3);
+            //Product cheerios = new Product("cheerios", 3.01, 3);
+            Product cheerios = new Product("cheerios", 3);
             ShoppingCart.AddItem(cheerios);
             ShoppingCart.OutItems();
 
